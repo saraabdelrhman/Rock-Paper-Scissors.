@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <div class="container text-center p-5">
+        <header class="text-center mb-4">
+            <div class="guess d-flex justify-content-center align-items-center">
+                <h1 class="text-center text-dark">Rock-Paper-Scissors</h1>
+                <button type="button" class="btn btn-success m-4 p-3">Rules</button>
+            </div>
+            <div class="modal-container container w-75 justify-content-center align-items-center d-flex bg-white position-fixed visually-hidden z-3">
+                <button class="close-btn btn btn-danger position-absolute top-0 end-0 m-3">X</button>
+                <div class="content text-center justify-content-center align-items-center bg-white p-5 rounded">
+                    <h2 class="text-dark">* Rock wins against Scissors *</h2><br>
+                    <h2 class="text-dark">* Paper wins against Rock *</h2><br>
+                    <h2 class="text-dark">* Scissors win against Paper *</h2>
+                </div>
+            </div>
+            <h3 class="text-danger">Choose</h3>
+            <div class="content d-flex justify-content-center align-items-center p-4">
+                <div class="box mx-3" id="rock">✊</div>
+                <div class="box mx-3" id="paper">📃</div>
+                <div class="box mx-3" id="scissors">✂️</div>
+            </div>
+            <h3 class="fw-bolder player">Player:</h3>
+            <h3 class="fw-bolder computer">Computer:</h3>
+            <button class="result">Result</button>
+        </header>
+    </div>
+    <script src="guess.js"></script>
+</body>
+</html>
